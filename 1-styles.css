@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.section {
+  text-align: center;
+  padding: 50px 20px;
+}
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.section p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 40px;
+}
+.services, .results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service, .result {
+  flex: 1 1 200px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+}
+.service img, .result img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+.service h3, .result h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.service p, .result p {
+  font-size: 0.9em;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .service, .result {
+      flex: 1 1 100%;
+  }
+}
